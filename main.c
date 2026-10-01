@@ -4,8 +4,6 @@
 
 int main(int argc, char *argv[])
 {
-
-  printf("size of unsigned long int is: %lu\n", sizeof(long int));
     long result = 0;
     int n = 0;
 
@@ -13,8 +11,8 @@ int main(int argc, char *argv[])
     scanf("%d", &n);
     if(n <= 0 || n > 20)
       {
-        printf("Bad news: you've entered an invalid value.\n");
-        return 1;
+        printf("Bad news: you've entered an invalid value and this computer is going to print factorial of 1 instead. Please enter value between 1 and 20.\n");
+	n=1;
       }
 
     result = factorial(n);
